@@ -1,10 +1,12 @@
-# FROM enus0803/nodejs-windows-chrome-gm
 FROM node
 
-WORKDIR /myangularapp
+WORKDIR /mysampleangularapp
 
 COPY . .
 RUN npm install -g http-server
 
-EXPOSE 9999
-CMD ["http-server", "--port", "9999"]
+EXPOSE 3580
+CMD ["http-server", "--port", "3580"]
+
+
+
